@@ -1,0 +1,14 @@
+# Font Hosting for Email Signature
+
+This repository hosts the **HurmeGeometricSans1** fonts for use in email signatures and other web-based applications. The fonts are hosted here to ensure they are publicly accessible and can be easily integrated into HTML/CSS.
+
+## Fonts Included
+The repository contains the following font files:
+
+1. **HurmeGeometricSans1-Bold**
+   - `hurmegeometricsans1-bold-webfont.woff2`
+   - `hurmegeometricsans1-bold-webfont.woff`
+
+2. **HurmeGeometricSans1-Regular**
+   - `hurmegeometricsans1-regular-webfont.woff2`
+   - `hurmegeometricsans1-regular-webfont.woff`
