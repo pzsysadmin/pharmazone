@@ -75,7 +75,7 @@
 
         @media screen and (max-width: 600px) {
             .signature {
-                flex-direction: row-reverse;
+                flex-direction: column;
                 gap: 15px;
             }
 
@@ -98,7 +98,7 @@
     </style>
 </head>
 <body>
-    <!-- Conditional block for Outlook 2013 -->
+    <!-- Outlook-Only Conditional Block -->
     <!--[if mso]>
     <table style="width:100%; border:1px solid #004c3f; border-radius:15px; background-color:#ffffff;">
         <tr>
@@ -109,35 +109,37 @@
                 <p style="margin:0; font-family:Arial, sans-serif; font-size:18px; font-weight:bold; color:#004c3f; letter-spacing:1.5px;">%%FirstName%% %%LastName%%</p>
                 <p style="margin:0; font-family:Arial, sans-serif; font-size:14px; color:#ea9999;">%%Title%%</p>
                 <p style="margin:5px 0; font-family:Arial, sans-serif; font-size:12px;">
-                    <strong>T:</strong> +965 222 111 00<br>
+                    <strong>T:</strong> +965 222 111 00
                     <!-- Dynamically handle mobile number -->
                     <!--[if %%MobileNumber%%]>
                     <strong>M:</strong> %%MobileNumber%%<br>
-                    <![endif]-->
-                    <strong>E:</strong> %%EmailAddress%%<br>
+                    <strong>E:</strong> %%Email%%<br>
                     <strong>A:</strong> Salmiya, Amr Bin Al Aas Street Sama Tower, Floor 9
+                    <![endif]-->
                 </p>
             </td>
         </tr>
     </table>
     <![endif]-->
-    
-    <!-- Modern HTML Viewer -->
+
+    <!-- Modern Email Clients -->
+    <!--[if !mso]><!-->
     <div class="signature">
+        <div class="logo">
+            <img src="https://pzsysadmin.github.io/pharmazone/Pharmazone_Logo_Icon.png" alt="Pharmazone Logo">
+        </div>
         <div class="details">
             <div class="name">%%FirstName%% %%LastName%%</div>
             <div class="title">%%Title%%</div>
             <div class="contact">
-                <p><strong>T:</strong> +965 222 111 00</p>
+                <p><strong>T:</strong> +965 222 111 00 
                 <!-- Dynamically handle mobile number -->
-                <p><strong>M:</strong> %%MobileNumber%%</p>
-                <p><strong>E:</strong> %%EmailAddress%%</p>
+                <strong>M:</strong> %%MobileNumber%%</p>
+                <p><strong>E:</strong> %%Email%%</p>
                 <p><strong>A:</strong> Salmiya, Amr Bin Al Aas Street Sama Tower, Floor 9</p>
             </div>
         </div>
-        <div class="logo">
-            <img src="https://pzsysadmin.github.io/pharmazone/Pharmazone_Logo_Icon.png" alt="Pharmazone Logo">
-        </div>
     </div>
+    <!--<![endif]-->
 </body>
 </html>
