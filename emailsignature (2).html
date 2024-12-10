@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature with Fonts</title>
+    <style>
+        @font-face {
+            font-family: 'HurmeGeometricSans1-Bold';
+            src: url('https://pzsysadmin.github.io/pharmazone/HurmeGeometricSans1-Bold.woff2') format('woff2'),
+                 url('https://pzsysadmin.github.io/pharmazone/HurmeGeometricSans1-Bold.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'HurmeGeometricSans1-Regular';
+            src: url('https://pzsysadmin.github.io/pharmazone/HurmeGeometricSans1-Regular.woff2') format('woff2'),
+                 url('https://pzsysadmin.github.io/pharmazone/HurmeGeometricSans1-Regular.woff') format('woff');
+        }
+
+        body {
+            font-family: 'HurmeGeometricSans1-Regular', Arial, sans-serif;
+            margin: 20px;
+            background-color: #ffffff; /* White background */
+        }
+
+        .signature {
+            max-width: 700px;
+            border: 1px solid #004c3f;
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+            font-size: 14px;
+            color: #004c3f;
+            background-color: #ffffff; /* White background for the signature */
+        }
+
+        .logo {
+            width: 100px;
+            flex-shrink: 0;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .details {
+            flex: 1;
+            text-align: left;
+        }
+
+        .name {
+            font-family: 'HurmeGeometricSans1-Bold', Arial, sans-serif;
+            font-size: 24px;
+            color: #004c3f;
+            font-weight: bold;
+            letter-spacing: 1.5px; /* Adjust spacing between letters */
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-size: 18px;
+            color: #ea9999;
+            margin-bottom: 15px;
+        }
+
+        .contact strong {
+            font-weight: bold;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: #004c3f;
+        }
+    </style>
+</head>
+<body>
+    <div class="signature">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="https://pzsysadmin.github.io/pharmazone/Pharmazone_Logo_Icon.png" alt="Pharmazone Logo">
+        </div>
+        <!-- Details Section -->
+        <div class="details">
+            <div class="name">%%FirstName%% %%LastName%%</div>
+            <div class="title">%%Title%%</div>
+            <div class="contact">
+                <strong>T:</strong> +965 222 111 00 <br>
+                <strong>E:</strong> %%EmailAddress%% <br>
+                <strong>A:</strong> Salmiya, Amr Bin Al Aas Street Sama Tower, Floor 9
+            </div>
+        </div>
+    </div>
+</body>
+</html>
