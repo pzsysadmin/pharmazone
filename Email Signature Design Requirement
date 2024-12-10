@@ -1,0 +1,91 @@
+Email Signature Design Requirement
+Objective:
+To design an email signature that is professional, responsive, and consistent across desktop and mobile email clients, adhering to the following specifications.
+
+Design Elements
+Font Styles:
+
+Use the HurmeGeometricSans1-Bold font for the name.
+Use the HurmeGeometricSans1-Regular font for all other text.
+Fallback Fonts: Verdana,Trebuchet MS
+Ensure font sizes are visually proportional:
+Name: 24px (desktop), 18px (mobile).
+Title: 18px (desktop), 14px (mobile).
+Contact Information: 14px (desktop), 12px (mobile).
+Layout:
+
+Desktop View:
+Content (name, title, contact information) on the left.
+Logo on the right.
+Mobile View:
+Logo should move to the left.
+Content should appear on the right, aligned for readability.
+Background and Borders:
+
+Background color: White (#ffffff).
+Border: 1px solid with a dark green tone (#004c3f).
+Rounded corners: Apply a 15px border radius to the entire signature container.
+Spacing and Alignment:
+
+Adequate spacing between elements to avoid a cluttered appearance.
+Ensure equal vertical and horizontal padding (desktop: 20px, mobile: 15px).
+Dynamic Mobile Number Placeholder:
+
+The Mobile Number (M:) should dynamically appear only if the placeholder (%%MobileNumber%%) has data.
+If %%MobileNumber%% is empty or not provided, the M: label and the corresponding line should be omitted entirely.
+Code Blocks for Compatibility:
+
+The signature code must be split into two blocks to ensure compatibility with different email clients:
+Block 1: Inline styles and inline fonts for Outlook 2013 (which doesn’t support external CSS styles).
+Block 2: Standard HTML code with linked fonts and styles for modern email viewers.
+Use conditional comments or logic to serve the appropriate block to each client.
+Technical Considerations
+Email Client Compatibility:
+
+Ensure compatibility with popular email clients:
+Outlook (2013, 2016, 2019, and Office 365).
+Gmail (web and mobile).
+Apple Mail.
+Other modern email clients.
+Use inline styles for older Outlook versions and linked styles for modern email clients.
+Font Hosting:
+
+Fonts are hosted externally on GitHub at the following URLs:
+HurmeGeometricSans1-Bold:
+https://pzsysadmin.github.io/pharmazone/HurmeGeometricSans1-Bold.woff2
+https://pzsysadmin.github.io/pharmazone/HurmeGeometricSans1-Bold.woff
+HurmeGeometricSans1-Regular:
+https://pzsysadmin.github.io/pharmazone/HurmeGeometricSans1-Regular.woff2
+https://pzsysadmin.github.io/pharmazone/HurmeGeometricSans1-Regular.woff
+Logo:
+
+Logo URL: https://pzsysadmin.github.io/pharmazone/Pharmazone_Logo_Icon.png.
+Dimensions:
+Desktop: Maximum width 100px.
+Mobile: Maximum width 80px.
+Responsiveness:
+
+Use a @media query to optimize the design for smaller screens:
+Stack elements vertically for readability.
+Center align the text if necessary for clarity.
+Dynamic Placeholder Example
+The M: %%MobileNumber%% should behave as follows:
+
+If %%MobileNumber%% contains a value (e.g., +965 555 111 22):
+M: +965 555 111 22
+If %%MobileNumber%% is empty or missing:
+Omit the line entirely. No M: label or blank space should appear in the signature.
+Deliverables
+A responsive HTML file implementing the email signature design.
+The signature code split into two blocks:
+Block 1: Inline styles and inline fonts for Outlook 2013.
+Block 2: Standard HTML with linked fonts and CSS for modern email viewers.
+A preview of the signature on both desktop and mobile views.
+Ensure the code is tested and verified for:
+Font rendering.
+Compatibility across major email clients.
+Proper handling of the %%MobileNumber%% placeholder.
+
+
+Make sure the characters not exceed 5000 in the file
+
