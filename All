@@ -1,0 +1,189 @@
+<!--wsrxfyjmcqsjdwhdmpxgpawwrjfvegafqikklfyxvprlefrbletwmeuiaxcbhtswylgmpbvyfvksllapaypblkgsnqkzioadwmbqkayxocaozgaftxpdnsicdlzsfutg-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Email Signature</title>
+ <style>
+@font-face {
+font-family: 'HurmeGeometricSans1-Bold';
+src: url('https://pzsysadmin.github.io/pharmazone/HurmeGeometricSans1-Bold.woff2') format('woff2'),
+url('https://pzsysadmin.github.io/pharmazone/HurmeGeometricSans1-Bold.woff') format('woff');
+}
+
+@font-face {
+font-family: 'HurmeGeometricSans1-Regular';
+src: url('https://pzsysadmin.github.io/pharmazone/HurmeGeometricSans1-Regular.woff2') format('woff2'),
+url('https://pzsysadmin.github.io/pharmazone/HurmeGeometricSans1-Regular.woff') format('woff');
+}
+
+body {
+font-family: 'HurmeGeometricSans1-Regular', Arial, sans-serif;
+background-color: #ffffff;
+}
+
+.signature {
+max-width: 700px;
+border: 1px solid #00573f;
+border-radius: 15px;
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+gap: 20px;
+font-size: 14px;
+color: #00573f;
+background-color: #ffffff;
+}
+
+.logo {
+width: 100px;
+}
+
+.logo img {
+max-width: 100%;
+height: auto;
+}
+
+.details {
+flex: 1;
+text-align: left;
+}
+
+.name {
+font-family: 'HurmeGeometricSans1-Bold', Arial, sans-serif;
+font-size: 24px;
+color: #00573f;
+font-weight: bold;
+letter-spacing: 1.5px;
+}
+
+.title {
+font-size: 18px;
+color: #ea9999;
+}
+
+.contact strong {
+font-weight: bold;
+}
+
+.contact a {
+text-decoration: none;
+color: #00573f;
+}
+
+@media screen and (max-width: 600px) {
+.signature {
+ flex-direction: column;
+ gap: 15px;
+}
+
+.logo {
+ width: 80px;
+}
+
+.name {
+ font-size: 18px;
+}
+
+.title {
+ font-size: 14px;
+}
+
+.contact {
+ font-size: 12px;
+}
+}
+ </style>
+</head>
+<body>
+<!--[if mso]>
+<table align="left" style="width:60%; border:1px solid #00573f; border-radius:15px; background-color:#ffffff; margin-top:40px;">
+  <tr>
+    <td style="width:80px; padding:10px; text-align:left;">
+      <img src="https://pzsysadmin.github.io/pharmazone/Pharmazone_Logo_Icon.png" alt="Pharmazone Logo" style="width:80px;">
+    </td>
+    <td style="padding:10px; text-align:left;">
+      <p style="margin:0; font-family:HurmeGeometricSans1-Bold, Verdana; font-size:18px; font-weight:bold; color:#00573f; letter-spacing:1.5px;">%%FirstName%% %%LastName%%</p>
+      <p style="margin:0; font-family:HurmeGeometricSans1-Bold, Verdana; font-size:14px; color:#ea9999;">%%Title%%</p>
+      <p style="margin:5px 0; font-family:HurmeGeometricSans1-Regular, Verdana; font-size:12px; color:#00573f;">
+        <strong>T:</strong> %%PhoneNumber%%   <strong>M:</strong> %%MobileNumber%%<br>
+        <strong>E:</strong> %%Email%%<br>
+        <strong>A:</strong> Salmiya, Amr Bin Al Aas Street Sama Tower, Floor 9
+      </p>
+    </td>
+  </tr>
+</table>
+<![endif]-->
+<!--[if !mso]><!-->
+<body style="font-family: HurmeGeometricSans1-Bold,Arial, sans-serif; font-size: 10pt; margin: 0; padding: 0; margin-top:40px">
+<table cellpadding="0" cellspacing="0" style="border: 1px solid #00573f; border-radius: 10px; width: 100%; max-width: 600px; font-family: Arial, sans-serif; background-color: #ffffff; padding: 10px;">
+ <tbody>
+<tr>
+<td style="width: 70px; vertical-align: middle; padding-right: 15px; text-align: center;">
+ <img src="https://pzsysadmin.github.io/pharmazone/Pharmazone_Logo_Icon.png" alt="Logo" style="width: 80px; max-width: 100%; height: auto; border: 0;">
+</td>
+<td style="text-align: left; vertical-align: middle;">
+ <table cellpadding="0" cellspacing="0" style="width: 100%; line-height: 1.6;">
+<tbody>
+<tr>
+ <td style="font-family: HurmeGeometricSans1-Bold, Arial, sans-serif; font-size: 14pt; font-weight: bold; color: #00573f; letter-spacing: 1.5px;">
+%%FirstName%% %%LastName%%
+ </td>
+</tr>
+<tr>
+ <td style="font-family: HurmeGeometricSans1-Regular, Arial, sans-serif; font-size: 12pt; color: #e48bb7;">
+%%Title%%
+ </td>
+</tr>
+<tr>
+ <td style="font-family: HurmeGeometricSans1-Regular, Arial, sans-serif; font-size: 10pt; color: #00573f;">
+<strong>T:</strong> %%PhoneNumber%%   <strong>M:</strong> %%MobileNumber%%</span>
+ </td>
+</tr>
+<tr>
+ <td style="font-family: HurmeGeometricSans1-Regular, Arial, sans-serif; font-size: 10pt; color: #00573f;">
+<strong>E:</strong> %%Email%%
+ </td>
+</tr>
+<tr>
+ <td style="font-family: HurmeGeometricSans1-Regular, Arial, sans-serif; font-size: 10pt; color: #00573f;">
+<strong>A:</strong> Salmiya, Amr Bin Al Aas Street Sama Tower, Floor 9
+ </td>
+</tr>
+</tbody>
+ </table>
+</td>
+</tr>
+ </tbody>
+</table>
+
+<style>
+@media only screen and (max-width: 480px) {
+body {
+font-size: 12px; 
+}
+td:first-child img {
+width: 100px; 
+height: auto;
+}
+td > table td {
+font-size: 12px; 
+}
+table {
+border-radius: 5px;
+padding: 5px;
+}
+td {
+padding-right: 10px;
+}
+td:first-child {
+padding-right: 10px; 
+}
+}
+</style>
+</body>
+ <!--<![endif]-->
+</body>
+</html>
